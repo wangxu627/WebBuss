@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>错误页</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+        <!
+        -- body {
+            background-image: url(images/bg.gif);
+        }
+        body, td, th {
+            color: #CC0000;
+            font-weight: bold;
+        }
+        .STYLE2 {
+            font-size: 26px;
+        }
+        -- ></style>
+</head>
+<script language="JavaScript">
+    function correctPNG() // correctly handle PNG transparency in Win IE 5.5 & 6.
+    {
+        var arVersion = navigator.appVersion.split("MSIE")
+        var version = parseFloat(arVersion[1])
+        if ((version >= 5.5) && (document.body.filters)) {
+            for (var j = 0; j < document.images.length; j++) {
+                var img = document.images[j]
+                var imgName = img.src.toUpperCase()
+                if (imgName.substring(imgName.length - 3, imgName.length) == "PNG") {
+                    var imgID = (img.id) ? "id='" + img.id + "' " : ""
+                    var imgClass = (img.className) ? "class='" + img.className + "' " : ""
+                    var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' "
+                    var imgStyle = "display:inline-block;" + img.style.cssText
+                    if (img.align == "left") imgStyle = "float:left;" + imgStyle
+                    if (img.align == "right") imgStyle = "float:right;" + imgStyle
+                    if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle
+                    var strNewHTML = "<span " + imgID + imgClass + imgTitle
+             + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";"
+             + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader"
+             + "(src=\'" + img.src + "\', sizingMethod='scale');\"></span>"
+                    img.outerHTML = strNewHTML
+                    j = j - 1
+                }
+            }
+        }
+    }
+    window.attachEvent("onload", correctPNG);
+</script>
+<body>
+    <center>
+        <center>
+            <table width="435" height="261" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="center">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td height="131" align="left">
+                        <img src="images/10.jpg" width="733" height="466" />
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </center>
+</body>
+</html>

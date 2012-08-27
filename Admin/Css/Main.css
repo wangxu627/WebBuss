@@ -1,0 +1,160 @@
+﻿body {
+	font-size: 12px;
+	color:#37382E;
+    margin: 0;
+	text-align:center;
+	background-image:url(../images/b1.jpg);
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+
+	
+}
+
+img
+{
+border:0px;
+}
+/*input[type="text"]
+{
+background-color:#897715;
+border:solid 1px #999999;
+color:White;
+}
+input[type="password"]
+{
+background-color:#897715;
+border:solid 1px #999999;
+color:White;
+}*/
+
+th
+{
+    background-image:url(../images/tbbg.gif);
+	color:#333333;
+	line-height:25px;
+}
+td
+{
+    line-height:25px;
+    }
+#top
+{
+	width:100%;
+    margin:0px auto 0px auto;
+}
+
+#main
+{
+	width:98%;
+    overflow:auto;
+	height:700px;
+    margin:0px auto 0px auto;
+	background-color:#CFE7F1;
+}
+
+#left
+{
+	width:16%;
+	height:100%;
+	float:left;
+	padding-left:2%;
+	padding-top:5%;
+}
+
+#right
+{
+
+    width:78%;
+    height:100%;
+    float:right;
+	padding-right:1%;
+	padding-top:1%;
+}
+
+#bottom
+{
+
+    width:98%;
+    margin:0px auto 0px auto;
+}
+
+a:link {
+	text-decoration:none;
+	color: #000000;
+}
+a:visited {
+	text-decoration:none;
+	color: #000000;
+}
+a:hover {
+	color: #FF0000;
+	text-decoration: underline;
+}
+a:active {
+	text-decoration:none;
+	color: #000000;
+}
+
+#right a:link {
+    font-size:12px;
+	text-decoration:none;
+	color: #333333;
+}
+#right a:visited {
+    font-size:12px;
+	text-decoration:none;
+	color: #333333;
+}
+#right a:hover {
+    font-size:12px;
+	color: #990000;
+	text-decoration: underline;
+}
+#right a:active {
+    font-size:12px;
+	text-decoration:none;
+	color: #333333;
+}
+.k
+{
+    background-image:url(../images/tbbg.gif);
+    line-height:26px;
+	text-align:left;
+	padding-left:14px;
+	font-weight:bold;
+	color:#333333;
+	border:solid 1px #9CDAF5;
+	
+}
+
+
+.td1 {
+	 BORDER-BOTTOM: #86C2FF 1px solid; BACKGROUND-COLOR: #f3f7fa
+}
+.td2 {
+	BORDER-RIGHT: #86C2FF 1px solid; BORDER-BOTTOM: #86C2FF 1px solid
+}
+.td3 {
+	BORDER-RIGHT: #86C2FF 1px solid; BORDER-BOTTOM: #86C2FF 1px solid; line-height:25px
+}
+.td4 {
+	BORDER-RIGHT: #86C2FF 1px solid; BORDER-BOTTOM: #86C2FF 1px solid
+}
+.td5 {
+    padding-left:50px
+}
+.table1 {
+	BORDER-RIGHT: #86C2FF 3px double; BORDER-TOP: #86C2FF 3px double; BORDER-LEFT: #86C2FF 3px double; BORDER-BOTTOM: #86C2FF 3px double
+}
+.table2 {
+	border: 1px solid #86C2FF;
+    width: 822px;
+}
+.table3 {
+	BORDER-TOP: #86C2FF 1px solid; BORDER-LEFT: #86C2FF 1px solid
+}
+
+.table4{
+ border:solid 1px #B7206D
+
+ 
+}
